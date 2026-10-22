@@ -49,13 +49,9 @@ let quietSred = 0;
 if (quietN > 0) {
     quietSred = quietSum / quietN;
 }
-
-const alertMessage = `Средняя громкость – ${sredVol.toFixed(1)} дБ, ${loudVols.length} треков – громкие.`;
+const alertMessage = `Привет, ${userName || "друг"}!\nСредняя громкость – ${sredVol.toFixed(1)} дБ, ${loudVols.length} треков – громкие.`;
 alert(alertMessage);
 
+console.log(`Привет, ${userName || "друг"}! Начинаем анализ громкости треков.`);
 console.log(`Количество тихих треков: ${quietN}`);
 console.log(`Их средняя громкость: ${quietSred.toFixed(1)} дБ`);
-
-if (maxVol >= 105) {
-    console.log("Такая громкость может повредить слух — используйте наушники с ограничением");
-}

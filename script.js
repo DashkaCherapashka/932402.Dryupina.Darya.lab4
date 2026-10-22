@@ -1,4 +1,4 @@
-const userName = prompt("Как вас зовут?", "Дарья");
+const userName = prompt("Как вас зовут?", "");
 if (userName) {
     console.log(`Привет, ${userName}! Начинаем анализ громкости треков.`);
 }
